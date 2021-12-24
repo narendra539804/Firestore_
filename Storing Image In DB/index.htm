@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Firebase Upload Image</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      async
+      src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"
+    ></script>
+    <script
+      async
+      src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="file" id="photo" />
+    <button onclick="uploadImage()">Upload Image</button>
+    <!-- Stream video via webcam -->
+
+    <video
+      id="video"
+      width="500"
+      height="500"
+      playsinline
+      controls
+      autoplay
+    ></video>
+
+    <!-- Trigger canvas web API -->
+    <button id="snap">Capture</button>
+
+    <!-- Webcam video snapshot -->
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script src="app.js"></script>
+  </body>
+</html>
